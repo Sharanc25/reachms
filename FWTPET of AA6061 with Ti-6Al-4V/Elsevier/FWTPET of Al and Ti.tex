@@ -1,0 +1,217 @@
+%% Refer elsdoc for options available for "Document Class"
+\documentclass[preprint]{elsarticle}
+
+%% \usepackage{lineno}
+\usepackage{lineno,hyperref}
+% if you have landscape tables
+\usepackage[figuresright]{rotating}
+
+%% Custom Packages
+\usepackage{float} %% For image placement
+
+%% Put line numbers for every line.
+\modulolinenumbers[1] 
+
+%% Enter Journal Name here
+\journal{Materials and Design}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% The amssymb package provides various useful mathematical symbols
+%%\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Reference Styling %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% Example : \biboptions{comma,round}
+
+\biboptions{square,comma,sort&compress}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %% Declarations for front matter
+\begin{document}
+                   %% Declarations of Commands
+\newcommand{\degree}[1]{\ensuremath{^{\circ}}}  %% Command for degree
+
+
+
+\begin{frontmatter}
+
+\title{Friction welding of Ti-6Al-4V tube to AA6061 tube-plate using an external tool 20\degree}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %% Author Declaration
+\author[META]{Sharan. C}
+\ead{Sharanc25@gmail.com}
+\author[META]{Maxwell Rejil. C}
+\ead{maxwellrejilc@gmail.com}
+\author[META]{Sooraj. R}
+\ead{soorajramana89@gmail.com}
+\author[META]{Muthukumaran. S\corref{cor1}}
+\ead{smuthu@nitt.edu}
+%\ead[url]{http://www.nitt.edu/home/academics/departments/meta/faculty/asstprof/smuthu}
+
+\cortext[cor1]{Corresponding Author}
+
+\address[META]{Department of Metallurgical and Materials Engineering, National Institute of Technology, Tiruchirappalli-620015, India}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+         
+\begin{abstract}
+Using a patented process - Friction welding of tube to tube-plate using an external tool (FWTPET), Ti-6Al-4V tube and AA6061-T651 tube-plate were welded together. The welding was carried out at 5 different speeds with three different tube profiles (Holes, Slots and Petals). PWHT was done on the welded samples. The effect of tube profile and PWHT on the joint strength of the welded samples was measured using an in-house developed test procedure named ``Plunge Shear Test''. Fractography studies were carried out on the  sheared surfaces. Since Titanium and Aluminium dissimilar welds are prone to form Titanium aluminides, XRD analysis was done at the joint interface to study the effect of intermetallics on the joint strength.
+\end{abstract}
+
+\begin{keyword}
+Ti-6Al-4V \sep AA6062 \sep Friction Welding \sep Tube to tube Plate \sep TiAl
+\end{keyword}
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							 %%Line Numbers
+%% Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+
+\linenumbers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							  %%Sections
+								
+\section{Introduction}
+\label{sec:Introduction}
+Welding of dissimilar materials in itself poses great difficulty. But welding a low melting alloy (AA6061) with a high temperature material (Ti-6Al-4V) makes the welding even more difficult. Couple that with unconventional weld geometry, this poses a greater challenge for material scientists and welding engineers. There are very few welding processes that can successfully weld this combination. One such process is FWTPET. Patented in the year ---- by Dr.S.Muthukumaran, this process is used to weld an unconventional weld design where a tube is welded to a tube plate. Although this seems trivial, %Incomplete%   
+However, joining of Al alloys to Ti alloys is difficult due to the formation of excessive intermetallic compounds at interface by traditional fusion welding method \cite{Fuji2002}. Excessive intermetallic compounds at the interface will make the joint brittle thereby reducing the weld strength. 
+Friction welding of tube to tube-plate using an external tool (FWTPET) is an innovative process that has been used successfully to join tube with tube-plate of different materials and has potential industrial applications \cite{Kumaran2011}. Unlike FSW process, in FWTPET the pin acts as an anvil and does not cause any stirring action \cite{SenthilKumaran2011}. This leads to lesser heat generation at interface and in turn leads to lesser intermetallic formation when compared to Friction Stir Welding (FSW) processes \cite{MadhusudhanReddy2009}.
+
+
+\section{Experimental Details} 
+\label{sec:Experimental Details}
+\subsection{Materials}
+\label{subsec:Materials}
+Aluminium alloy (AA6061-T651) plates of 6 mm thickness and Titanium Grade V (Ti-6Al-4V) tubes of 19 mm outer diameter were used. T651 designation denotes that, after tempering of the Aluminium alloy, a 1\% to 3\% stretching was done to the material to get rid of residual stresses. The base material composition of AA6061 is given in Table~\ref{table:AA6061-composition}. The chemical composition of Ti-6Al-4V is given in Table~\ref{table:Ti-6Al-4V-composition}. The external tool used for welding was made of Tungsten Heavy alloy (Fig. 1) having 29mm shoulder diameter and 12.5mm pin diameter. Chemical composition of the external tool is listed in Table~\ref{table:tool-composition}. 
+
+\begin{table}[!htbp]
+\caption{CHEMICAL COMPOSITION OF Ti-6Al-4V}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+Element & C & Fe & O & N & Al & H & V & Y & Ti\\ 
+\hline 
+Wt \% & 0.08 & 0.03 & 0.2 & 0.05 & 0.148 & 5.5-6.75 & 3.5-4.5 & 0.005 & balance\\ 
+\hline 
+\end{tabular}
+\label{table:Ti-6Al-4V-composition} % is used to refer this table in the text
+\end{table}
+
+
+\begin{table*}[!htbp]
+\caption{CHEMICAL COMPOSITION OF AA6061}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+Element & Mg & Si & Fe & Cu & Cr & Mn & Ti & Zn & Al\\ 
+\hline 
+Wt \% & 0.70 & 0.43 & 0.497 & 0.164 & 0.148 & 0.045 & 0.0495 & 0.0042 & balance\\ 
+\hline 
+\end{tabular}
+\label{table:AA6061-composition} % is used to refer this table in the text
+\end{table*}
+
+
+
+\begin{table*}[!htbp]
+\caption{CHEMICAL COMPOSITION OF TOOL MATERIAL}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Element & W & Ni & Co & Fe & O \\ 
+\hline 
+Wt \% & 90.5 & 5.3 & 0.2 & 3.4 & 0.007 \\ 
+\hline 
+\end{tabular}
+\label{table:tool-composition} % is used to refer this table in the text
+\end{table*}
+
+\section{Results and Discussion}
+\label{sec:Results and Discussion}
+\subsection{Sub-Section 1}
+
+\section{Conclusion}
+\label{sec:Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							%%References
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}         ==>>  [#]
+%%   \cite[chap. 2]{key} ==>> [#, chap. 2]
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+
+%% References with BibTeX database:
+%% Authors are advised to use a BibTeX database file for their reference list.
+%% The provided style file elsarticle-num.bst formats references in the required style
+
+\bibliography{bibtex-database}
+
+%% For references without a BibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							%%Appendix
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+\end{document}
