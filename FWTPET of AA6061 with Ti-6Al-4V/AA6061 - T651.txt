@@ -1,0 +1,5 @@
+To get to the -T6 temper, the 6061 is heated to about 990F, then quenched in water, then aged at about 350F for around 8 hours. That changes the typical yield strength from 8 ksi to about 40 ksi- fairly substantial.
+
+But that quenching in water puts residual stresses in the aluminum, since there is a surface-to-center cooling gradient. The -T651 designation means the mill took that extrusion and gave it a 1% to 3% stretching, or permanent set, to get rid of some of those residual stresses. Now we can machine it and it shouldn't distort.
+
+Finally, the final digit in the -T6511 designation (and how I know it was an extrusion, since this only applies to extruded stock) means that the mill is allowed to straighten the extruded bars, like in a press, to get them to meet the straightness tolerances.
