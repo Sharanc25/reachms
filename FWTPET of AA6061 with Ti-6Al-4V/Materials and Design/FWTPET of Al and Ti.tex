@@ -1,0 +1,275 @@
+%% Refer elsdoc for options available for "Document Class"
+\documentclass[preprint]{elsarticle}
+
+%% \usepackage{lineno}
+\usepackage{lineno,hyperref}
+% if you have landscape tables
+\usepackage[figuresright]{rotating}
+
+%% Custom Packages
+\usepackage{float} %% For image placement
+
+%% Put line numbers for every line.
+\modulolinenumbers[1] 
+
+%% Enter Journal Name here
+\journal{Materials and Design}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% The amssymb package provides various useful mathematical symbols
+%%\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Reference Styling %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% Example : \biboptions{comma,round}
+
+\biboptions{square,comma,sort&compress}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %% Declarations for front matter
+\begin{document}
+                   %% Declarations of Commands
+\newcommand{\degree}[1]{\ensuremath{^{\circ}}}  %% Command for degree
+
+
+
+\begin{frontmatter}
+
+\title{Friction welding of Ti-6Al-4V tube to AA6061 tube-plate using an external tool}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %% Author Declaration
+\author[META]{Sharan. C}
+\ead{Sharanc25@gmail.com}
+\author[META]{Maxwell Rejil. C}
+\ead{maxwellrejilc@gmail.com}
+\author[META]{Sooraj. R}
+\ead{soorajramana89@gmail.com}
+\author[META]{Muthukumaran. S\corref{cor1}}
+\ead{smuthu@nitt.edu}
+%\ead[url]{http://www.nitt.edu/home/academics/departments/meta/faculty/asstprof/smuthu}
+
+\cortext[cor1]{Corresponding Author}
+
+\address[META]{Department of Metallurgical and Materials Engineering, National Institute of Technology, Tiruchirappalli-620015, India}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+         
+\begin{abstract}
+Using a patented process - Friction welding of tube to tube-plate using an external tool (FWTPET), Ti-6Al-4V tube and AA6061-T651 tube-plate were welded together. The welding was carried out at 4 different speeds with two different tube profiles (Holes and Petals). The effect of tube profile on the joint strength of the welded samples was measured using an in-house developed test procedure named ``Plunge Shear Test''. Fractography studies were carried out on the  sheared surfaces. SEM and XRD analysis was done at the joint interface to study the effect of intermetallics on the joint strength.
+\end{abstract}
+
+\begin{keyword}
+Ti-6Al-4V \sep AA6062 \sep FWTPET \sep Plunge Shear Test \sep TiAl
+\end{keyword}
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							 %%Line Numbers
+%% Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+
+\linenumbers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							  %%Sections
+								
+\section{Introduction}
+\label{sec:Introduction}
+Welding of dissimilar materials in itself poses great difficulty. But welding a low melting alloy (AA6061) with a high temperature material (Ti-6Al-4V) makes the welding even more difficult. Couple that with unconventional weld geometry, this poses a greater challenge for material scientists and welding engineers. There are very few welding processes that can successfully weld this combination. One such process is FWTPET. Patented in the year ---- by Dr.S.Muthukumaran, this process is used to weld an unconventional weld design where a tube is welded to a tube plate. Although this seems trivial, %Incomplete%   
+However, joining of Al alloys to Ti alloys is difficult due to the formation of excessive intermetallic compounds at interface by traditional fusion welding method \cite{Fuji2002}. Excessive intermetallic compounds at the interface will make the joint brittle thereby reducing the weld strength. 
+Friction welding of tube to tube-plate using an external tool (FWTPET) is an innovative process that has been used successfully to join tube with tube-plate of different materials and has potential industrial applications \cite{Kumaran2011}. Unlike FSW process, in FWTPET the pin acts as an anvil and does not cause any stirring action \cite{SenthilKumaran2011}. This leads to lesser heat generation at interface and in turn leads to lesser intermetallic formation when compared to Friction Stir Welding (FSW) processes \cite{MadhusudhanReddy2009}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Experimental Details%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experimental Details} 
+\label{sec:Experimental Details}
+\subsection{Materials}
+\label{subsec:Materials}
+Aluminium alloy (AA6061-T651) plates of 6 mm thickness and Titanium Grade V (Ti-6Al-4V) tubes of 19 mm outer diameter were used. T651 designation denotes that, after tempering of the Aluminium alloy, a 1\% to 3\% stretching was done to the material to get rid of residual stresses. The base material composition of AA6061 is given in Table~\ref{table:AA6061-composition}. The chemical composition of Ti-6Al-4V is given in Table~\ref{table:Ti-6Al-4V-composition}. The external tool used for welding was made of Tungsten Heavy alloy (Fig. 1) having 29mm shoulder diameter and 12.5mm pin diameter. Chemical composition of the external tool is listed in Table~\ref{table:tool-composition}. 
+
+\begin{table}[!htbp]
+\caption{CHEMICAL COMPOSITION OF Ti-6Al-4V}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+Element & C & Fe & O & N & Al & H & V & Y & Ti\\ 
+\hline 
+Wt \% & 0.08 & 0.03 & 0.2 & 0.05 & 0.148 & 5.5-6.75 & 3.5-4.5 & 0.005 & balance\\ 
+\hline 
+\end{tabular}
+\label{table:Ti-6Al-4V-composition} % is used to refer this table in the text
+\end{table}
+
+
+\begin{table*}[!htbp]
+\caption{CHEMICAL COMPOSITION OF AA6061}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+Element & Mg & Si & Fe & Cu & Cr & Mn & Ti & Zn & Al\\ 
+\hline 
+Wt \% & 0.70 & 0.43 & 0.497 & 0.164 & 0.148 & 0.045 & 0.0495 & 0.0042 & balance\\ 
+\hline 
+\end{tabular}
+\label{table:AA6061-composition} % is used to refer this table in the text
+\end{table*}
+
+
+
+\begin{table*}[!htbp]
+\caption{CHEMICAL COMPOSITION OF TOOL MATERIAL}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Element & W & Ni & Co & Fe & O \\ 
+\hline 
+Wt \% & 90.5 & 5.3 & 0.2 & 3.4 & 0.007 \\ 
+\hline 
+\end{tabular}
+\label{table:tool-composition} % is used to refer this table in the text
+\end{table*}
+
+\subsection{Sample Preparation}
+\label{subsec:Sample Preparation}
+AA6061-T651 plate of 6 mm thickness was cut into 50 x 50 mm plates and a hole of 19 mm diameter was drilled at the center of these plates to accommodate Ti-6Al-4V tube. Tube outer diameter and inner diameter was 19 mm and 14 mm respectively and its length was 20 mm for metallographic studies. A 35 mm tube, where the first 20 mm is hollow and the remaining 15 mm is solid was used for Plunge Shear Test (PST). Three different tube profiles were used, they were – holes, slots and petals (Fig. 2). Number of holes, slots and petals for a tube was made 8 for all welds.
+
+\subsection{FWTPET}
+\label{subsec:FWTPET}
+Welding was done in a 4-Axis Friction Stir Welding machine (Fig. 3). The machine has a maximum rotational speed of 3000 rpm. Before welding, both the tube and plate were cleaned with Acetone to remove grease, dirt etc. The tube and plate were fitted to a custom-made backing block as shown in Fig. 3. The parameters used for welding were – tool rotational speed - 1120 rpm, plunge rate – 2 mm/min, plunge depth - 2 mm. These parameters were kept constant for all subsequent welds.
+
+\subsection{Plunge Shear Test}
+\label{subsec:Plunge Shear Test}
+In order to evaluate the integrity of the welded joints, a novel testing procedure was used. With the help of a plunger (Fig. 4), a compressive load was applied on the inner diameter of the tube in an UTM until the joint breaks. Using the fracture load obtained, we then calculate the weld strength. Weld strength is calculated by dividing the Fracture load by the weld area.
+
+\subsection{Metallography}
+\label{subsec:Metallography}
+The welded sample was sectioned along the transverse direction, mounted and polished with emery sheet of different grades. Further alumina polishing and diamond polishing with 1μm diamond paste was done. In order to reveal the microstructures, AA6061-T651 plate specimens were etched with Poulton’s reagent (30ml HCl, 40ml HNO3, 2.5 mL HF, 12 g CrO3, 42.5 mL H2O). The etchant time used was 10-15 seconds. Ti-6Al-4V tube specimens were etched with Kroll’s reagent (192ml H2O, 5mL HNO3, 3ml HCl, 2ml HF) for 25-30 seconds. Microstructures and macrostructures were taken using an optical microscope.
+
+\subsection{Scanning Electron Microscopy (SEM) and Energy-dispersive X-ray Spectroscopy (EDS)}
+\label{subsec:SEM and EDS}
+SEM and EDS analysis were performed to quantify the elemental weight percentage at the joint interface. The observations were carried out in a 200kV field effect scanning electron microscope (SEM-JEOL JSM 5410LV microscopy) coupled with EDS. EDS line scan was also carried out along the weld interface.
+
+\subsection{X-Ray diffraction analysis}
+\label{subsec:XRD}
+XRD analysis was done at the weld interface of Al-Ti dissimilar welds. XRD analysis helps to find out the formation of intermetallic at the weld interface. Scan speed was 10º/min and step width was 0.02º.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Results and Discussion%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results and Discussion}
+\label{sec:Results and Discussion}
+
+\subsection{Macrostructure Analysis}
+\label{subsec:Macrostructure Analysis}
+The macrostructures, for all three different tube profiles revealed defect free joints. For tube with holes and slots profile, Aluminium is embedded in the Titanium region (Fig. 5 a,b). Plates welded with tube having petals are characterized by Titanium deposited on the surface of the Aluminium plates (Fig. 5 c).
+
+\subsection{Microstructure Analysis}
+\label{subsec:Macrostructure Analysis}
+The microstructure of AA6061-T651 base metal is shown in Fig. 6. Optical micrographs of the base AA6061-T6 revealed the presence of Mg2Si precipitates which strengthens the Al alloy [4]. Ti-6Al-4V is an α-β alloy that has a “Basket Weave” microstructure in which retained β lies between α platelets in a Widmanstӓtten structure, itself contains thinner secondary α platelets [5]. In Fig. 7, the dark lines in the microstructure are
+the β phase and the light region is α phase.
+
+\subsection{Weld Strength}
+\label{subsec:Weld Strength}
+Weld strength was measured by using the shear fracture load obtained from PST. Shearing will take place along the interface of the welded sample. The shear strength values for different tube profiles are given in Table II. From the table, it is clear that tube with petals is having high shear strength compared to other to profiles. This is due to the increase in weld area when compared to other tube profiles.
+
+\subsection{X-Ray Diffraction Analysis}
+\label{subsec:XRD-Results}
+XRD plot at the weld interface for welds made with Tube with petals is shown in Fig. 12. From the XRD plot, the
+presence of TiAl3 intermetallic formation was observed. Formation of intermetallic compounds is detrimental to joint strength. Titanium aluminide has three major intermetallic compounds: γ TiAl, α Ti3Al and TiAl3. Although these intermetallics have very good mechanical and thermal properties, they have very low ductility [6]. Therefore, the presence of Titanium aluminides at the interface might decrease the joint strength.
+
+\subsection{SEM Analysis}
+\label{subsec:SEM Analysis}
+SEM micrograph (Fig. 13) shows the Titanium particles entirely entrapped in the Al matrix at the weld interface. It can be seen that thick mixed layers are formed on the interface. EDS Line Scanning analysis was done along the interface. EDS patterns and element contents are shown in Fig. 14.
+
+\subsection{Fractography}
+\label{subsec:Fractography}
+The SEM image (Fig. 15) shows fracture surface of Titanium tube for petal profile after the PST. From the image, we can clearly see some areas on the fracture surface where the aluminum alloy is still bonded to Titanium. SEM images of the fracture surface on the Aluminum plate shows cleavage facets, which is an indication shear fracture [7],[8]. Some Titanium particles embedded in the Aluminium matrix are also visible in
+the SEM images (Fig. 16 b).
+
+\section{Conclusion}
+\label{sec:Conclusion}
+\begin{enumerate}[1.]
+\item FWTPET method has been established to join 6mm thick Aluminum (AA6061-T651) tube plate to Titanium (Ti-6Al-4V) tubes of 2.5mm wall thickness.
+\item Three different tube profiles-hole, slot and petals, were used to study the feasibility of joining dissimilar materials (Al-Ti) using FWTPET and petal profile was found to have good strength.
+\item Shear strength of the joint reached 60% of AA6061–T651 base material strength.
+\item XRD analysis showed formation of TiAl3 at the interface. Intermetallic compounds at the interface were less when compared to traditional fusion welding processes which is due to the reduction in heat generation during the welding process.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							%%References
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}         ==>>  [#]
+%%   \cite[chap. 2]{key} ==>> [#, chap. 2]
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+
+%% References with BibTeX database:
+%% Authors are advised to use a BibTeX database file for their reference list.
+%% The provided style file elsarticle-num.bst formats references in the required style
+
+\bibliography{bibtex-database}
+
+%% For references without a BibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							%%Appendix
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+\end{document}
