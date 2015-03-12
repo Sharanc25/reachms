@@ -18,7 +18,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% The amssymb package provides various useful mathematical symbols
-%%\usepackage{amssymb}
+\usepackage{amssymb} 
+%% The amsmath package provides various useful mathematical formulae
+\usepackage{amsmath}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 
@@ -166,13 +168,6 @@ Wt \% & 90.5 & 5.3 & 0.2 & 3.4 & 0.007 \\
 \label{subsec:FWTPET}
 FWTPET process was carried out in a 4-Axis Friction Stir Welding machine (\ref{fig:fsw-machine}). Before welding, the tube and plate were cleaned with Acetone to remove dirt and grease. Then the tube and plate were fitted to a specially designed backing block as shown in \ref{fig:backing-block}. The parameter used for welding are given in Table \ref{table:process-parameters}. %The samples were welded at 4 different tool rotational speeds : 560, 710, 1120 and 1200 rpm. The parameters that were kept constant for all the welds were plunge rate - 2 mm/min, plunge depth - 2 mm and tube projection - 2 mm.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{images/Tool.jpg}
-\caption{Tungsten Heavy Alloy Tool}
-\label{fig:backing-block}
-\end{figure}
-
 \begin{table*}[!htbp]
 \caption{FWTPET Process Parameters}
 \centering
@@ -220,8 +215,26 @@ The microstructure of AA6061-T651 base metal is shown in Fig. 6. Optical microgr
 
 \subsection{Weld Strength}
 \label{subsec:Weld Strength}
-In order to calculate the weld strength, the welded specimen should fail exactly at the joint interface. The fracture load of the weld joint when divided by the area of the weld gives the weld strength. For FWTPET joints, the fracture load was measured using Plunge Shear Test (PST). PST was designed in such a way that the welded specimens fail exactly at the joint interface. For all speeds, the petals profile showed higher joint strength compared to the holes profile.  values for different tube profiles are given in Table II. From the table, it is clear that tube with petals is having high shear strength compared to other to profiles. This is due to the increase in weld area when compared to other tube profiles.
+In order to calculate the weld strength, the welded specimen should fail exactly at the joint interface. The fracture load of the weld joint when divided by the area of the weld gives the weld strength \ref{eq:weld-strength}. For FWTPET joints, the fracture load was measured using Plunge Shear Test (PST). PST was designed in such a way that the welded specimens fail exactly at the joint interface. For all speeds, the petals profile showed higher joint strength compared to the holes profile.  values for different tube profiles are given in Table II. From the table, it is clear that tube with petals is having high shear strength compared to other to profiles. This is due to the increase in weld area when compared to other tube profiles.
+\begin{gather} \label{eq:weld-strength}
+Weld\:Strength = \frac{\sigma}{A}
+\end{gather}
+where~$\sigma$ is the fracture load and \\
+~$A$ is the weld area.
+
+\begin{align}
+Weld\:Area &= \pi \: * d \: * \: h \\
+&= 3.141 \: * 19 \: * \: 4       \nonumber \\
+&= 238.76 mm^{2} \nonumber
+\end{align}
+where~$d$ is the external diameter of the Ti-6Al-4V tube and \\
+~$h$ is the height of weld.
+
+
+
 \par
+
+
 Fractography was done on both the Ti and Al side of the fractured samples. The river-flow pattern observed on the SEM images indicate that the joint failed by shear mode. All the welded samples failed at the joint.
 
 
