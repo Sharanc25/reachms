@@ -9,6 +9,7 @@
 %% Custom Packages
 %%\usepackage{fixltx2e} %% For SubScript
 \usepackage{float} %% For image placement
+\usepackage{multirow} %% For Multi-Row functionality in tables
 
 %% Put line numbers for every line.
 \modulolinenumbers[1] 
@@ -54,7 +55,6 @@
                    %% Declarations of Commands
 \newcommand{\degree}{\ensuremath{^{\circ}}}  %% Command for degree
 
-
 \begin{frontmatter}
 
 \title{Friction welding of Ti-6Al-4V tube to AA6061 tube-plate using an external tool}
@@ -99,12 +99,6 @@ Ti-6Al-4V \sep AA6061 \sep Friction welding of tube to tube plate \sep Plunge Sh
 \section{Introduction}
 \label{sec:Introduction}
 Friction welding of tube to tube plate using an external tool (FWTPET) is a new solid state welding process, invented by one of the present author, S. Muthukumaran in the year 2006 and patented in the year 2008. FWTPET process is carried out using a tool which has a shoulder and a pin. Unlike FSW process, in FWTPET the tool pin acts as an anvil and does not cause any stirring action\cite{SenthilKumaran2011}. During FWTPET, the rotating tool is lowered on to the tube plate and tube assembly with a constant plunge rate. When the rotating external tool touches the plate surface, it produces frictional heat. This frictional heat along with the axial and rotational forces plasticizes the metal. When the plunge depth increases, the plasticized metal due to the combined action of tool heat, rotation speed and axial force, flows towards the center of the tube. The tool pin acts as an anvil which drives the material away from the center. These opposing forces, force the plasticized materials to fill the flash trap. FWTPET process can be carried out in two methods - interference and clearance.  The parameters that affect the joint strength of a FWTPET welded joints are : tool rotational speed, tube profile, tool shoulder and pin dimension, heat input etc. Our aim was to increase the heat input study its effect of on joint strength. In order to increase the heat input we needed to increase the tool shoulder and tube contact area. 
-\begin{figure}[h!]
-\centering
-\includegraphics[trim=1cm 2cm 3cm 4cm, scale=0.1,width=\textwidth]{images/welding set up.pdf}
-\caption{FWTPET Process}
-\label{fig:fwtpet-process}
-\end{figure}
 \par 
 Highest performance, concurrent weight and cost reduction has become more and more important in aviation industry. There are different approaches to meet these demands. It is well known, for example, that welding of skin-stringer joints is progressively replacing riveted fuselage structures. Another very effective possibility is the implementation of hybrid structures; components made of different materials can be tailored for local needs. There is a rising need for a welding method to join dissimilar materials, such as Titanium (Ti) and Aluminium (Al). However, joining of Al alloys to Ti alloys is difficult due to the formation of excessive intermetallic compounds at interface by traditional fusion welding method [1]. Excessive intermetallic compounds at the interface will make the joint brittle thereby reducing the weld strength. AA6061 is a low melting soft metal whereas Ti-6Al-4V is a high melting hard material. Welding a low melting alloy (AA6061) with a high temperature material (Ti-6Al-4V) is extremely difficult by conventional fusion welding process. This leads to lesser heat generation at interface and in turn leads to lesser intermetallic formation when compared to Friction Stir Welding (FSW) processes \cite{MadhusudhanReddy2009}.
 
@@ -206,35 +200,58 @@ microstructure resembles that of the base metal microstructure for both AA6061-T
 
 \subsection{Weld Strength}
 \label{subsec:Weld Strength}
-In order to calculate the weld strength, the welded specimen should fail exactly at the joint interface. The fracture load of the weld joint when divided by the area of the weld gives the weld strength \ref{eq:weld-strength}. For FWTPET joints, the fracture load was measured using Plunge Shear Test (PST). PST was designed in such a way that the welded specimens fail exactly at the joint interface. For all speeds, the petals profile showed higher joint strength compared to the holes profile.  values for different tube profiles are given in Table II. From the table, it is clear that tube with petals is having high shear strength compared to other to profiles. This is due to the increase in weld area when compared to other tube profiles.
-\begin{gather} \label{eq:weld-strength}
-Weld\:Strength = \frac{\sigma}{A}
-Weld\:Area &= \pi \: * d \: * \: h \\
-\end{gather}
+The strength of weld can be measured only if the welded specimen fails at the joint interface. The fracture load of the weld joint when divided by the area of the weld gives the weld strength \ref{eq:weld-strength}. PST was designed in such a way that the welded specimens fail exactly at the joint interface. For FWTPET joints, the fracture load was measured using Plunge Shear Test (PST). 
 
-where~$\sigma$ is the fracture load and \\
+\begin{gather} 
+Weld\:Strength = \frac{\sigma}{A} \label{eq:weld-strength} \\
+Weld\:Area = \pi \times d \times h \label{eq:weld-area}
+\end{gather}
+where :\\
+~$\sigma$ is the fracture load and \\
 ~$A$ is the weld area. \\
 ~$d$ is the external diameter of the Ti-6Al-4V tube and \\
 ~$h$ is the height of weld.
+
+The weld area of FWTPET joints is equal to the lateral surface area of the cylindrical tube where the height is equal to the thickness of the plate. In our case, due to the 2 mm plunge depth on the plate surface, the height of the weld was taken as 4 mm. The weld area calculated was . as For all speeds, the petals profile showed higher joint strength compared to the holes profile. Values for different tube profiles are given in Table \ref{table:weld-strength}. From the table, it is clear that tube with petals is having high shear strength compared to other to profiles.
+
+
+\begin{table*}[htpb]
+\centering
+\caption{Fracture load and Weld Strength of FWTPET Samples}
+\label{table:weld-strength}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{RPM} & \multicolumn{2}{c|}{Holes}               & \multicolumn{2}{c|}{Petals}              \\ \cline{2-5} 
+                     & Fracture Load (kN) & Weld Strength (MPa) & Fracture Load (kN) & Weld Strength (MPa) \\ \hline
+550                  & 22.86              &                     & 25.83              &                     \\ \hline
+700                  & 32.78              &                     & 36.10              &                     \\ \hline
+900                  & 33.42              &                     & 40.72              &                     \\ \hline
+1100                 & 31.09              &                     & 45.84              &                     \\ \hline
+\end{tabular}
+\end{table*}
+
 
 \par
 Fractography was done on both the Ti and Al side of the fractured samples. The river-flow pattern observed on the SEM images indicate that the joint failed by shear mode. All the welded samples failed at the joint.
 
 \subsection{Heat Generated during FWTPET}
 \label{subsec:Heat Generated during FWTPET}
+The heat input equation for FWTPET is given in equation \ref{eq:heat-input}.
 \begin{gather} \label{eq:heat-input}
-Q_{M} = \frac{2\pi}{3} *  \omega * \tau_{friction} * (R^{3}_{o} - R^{3}_{i})
+Q_{T} = \frac{2\pi}{3} \times  \omega \times \tau_{friction} \times (R^{3}_{o} - R^{3}_{i}) \times t
 \end{gather}
-where~$Q_{M}$ is the Maximum Heat generated \\
+where : \\
+$Q_{M}$ is the Total Heat generated \\
 $\omega$ is the angular momentum of the tool \\
 $\tau_{friction}$ is the co-efficient of friction \\
 $R_{o}$ is the outer radius and  \\
-$R_{i}$ is the inner radius.
+$R_{i}$ is the inner radius and
+$t$ is the welding time.
 
 \subsection{X-Ray Diffraction Analysis}
 \label{subsec:XRD-Results}
 XRD plot at the weld interface for welds made with Tube with petals is shown in Fig. 12. From the XRD plot, the
-presence of TiAl3 intermetallic formation was observed. Formation of intermetallic compounds is detrimental to joint strength. Titanium aluminide has three major intermetallic compounds: γ TiAl, α Ti$_{3}$Al and TiAl$_{3}$. Although these intermetallics have very good mechanical and thermal properties, they have very low ductility [6]. Therefore, the presence of Titanium aluminides at the interface might decrease the joint strength.
+presence of TiAl$_{3}$ intermetallic formation was observed. Formation of intermetallic compounds is detrimental to joint strength. Titanium aluminide has three major intermetallic compounds: γ TiAl, α Ti$_{3}$Al and TiAl$_{3}$. Although these intermetallics have very good mechanical and thermal properties, they have very low ductility [6]. Therefore, the presence of Titanium aluminides at the interface might decrease the joint strength.
 
 \subsection{SEM Analysis}
 \label{subsec:SEM Analysis}
@@ -254,11 +271,13 @@ the SEM images (Fig. 16 b).
 \item XRD analysis showed formation of TiAl$_{3}$ at the interface. Intermetallic compounds at the interface were less when compared to traditional fusion welding processes which is due to the reduction in heat generation during the welding process.
 \end{enumerate}
 
+\iffalse
+
 
 \section{images}
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{images/welding set up.png}
+\includegraphics[width=\textwidth]{images/welding-set-up.png}
 \caption{XRD - Plot}
 \label{fig:xrd-plot}
 \end{figure}
@@ -283,6 +302,11 @@ the SEM images (Fig. 16 b).
 \caption{XRD - Plot}
 \label{fig:xrd-plot}
 \end{figure}
+
+
+
+
+\fi
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
