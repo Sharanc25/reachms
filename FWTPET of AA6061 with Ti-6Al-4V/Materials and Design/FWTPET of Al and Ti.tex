@@ -11,6 +11,7 @@
 \usepackage{float} %% For image placement
 \usepackage{multirow} %% For Multi-Row functionality in tables
 
+
 %% Put line numbers for every line.
 \modulolinenumbers[1] 
 
@@ -65,8 +66,8 @@
 \ead{Sharanc25@gmail.com}
 \author[META]{Maxwell Rejil. C}
 \ead{maxwellrejilc@gmail.com}
-\author[META]{Sooraj. R}
-\ead{soorajramana89@gmail.com}
+\author[META]{Sachin More}
+%\ead{soorajramana89@gmail.com}
 \author[META]{Muthukumaran. S\corref{cor1}}
 \ead{smuthu@nitt.edu}
 %\ead[url]{http://www.nitt.edu/home/academics/departments/meta/faculty/asstprof/smuthu}
@@ -169,7 +170,7 @@ Plunge Depth & 2 mm \\
 \hline 
 Plunge Rate & 6 mm/min \\ 
 \hline 
-Tube Projection & 2 mm \\ 
+Tube Projection & 2.5 mm \\ 
 \hline 
 Tool Rotational Speed & 550, 700, 900, 1100 RPM \\ 
 \hline 
@@ -197,6 +198,50 @@ The welded samples were sectioned at the weld joint for metallographic studies. 
 The microstructure of AA6061-T651 base metal is shown in Fig. 6. Optical micrographs of the base AA6061-T6 revealed the presence of Mg$_{2}$Si precipitates which strengthens the Al
 alloy [4]. After welding, AA6061-T6 showed fine grain structure at the weld interface with dissolution of Mg$_{2}$Si. In case of Ti-6Al-4V, the microstructure at the interface (Fig. 10) shows fine grain structure with equiaxed α phase with inter-granular retained β phase. When we move away from the interface, the
 microstructure resembles that of the base metal microstructure for both AA6061-T651 and Ti-6Al-4V.After welding, AA6061-T651 showed fine grain structure at the weld interface with dissolution of Mg$_{2}$Si. In case of Ti-6Al-4V, the microstructure at the interface (Fig. 10) shows fine grain structure with equiaxed α phase with inter-granular retained β phase. When we move away from the interface, the microstructure resembles that of the base metal microstructure for both AA6061-T651 and Ti-6Al-4V.
+
+\subsection{Heat Generated during FWTPET}
+\label{subsec:Heat Generated during FWTPET}
+The heat input equation for FWTPET is given in equation \ref{eq:heat-input}.
+\begin{gather} 
+\dot{Q} =  \frac{2\pi}{3} \times  \omega \times \tau_{friction} \times (R^{3}_{o} - R^{3}_{i}) \\
+Q_{T} = \dot{Q} \times t \label{eq:total-heat-input} \\
+\tau_{friction} = \mu \times P \label{eq:Contact-shear-stress}
+\end{gather}
+where : \\
+$\dot{Q}$ is the Heat Generation Rate \\
+$Q_{T}$ is the Total Heat Generated \\
+$\omega$ is the angular momentum of the tool \\
+$\tau_{friction}$ is the contact shear stress \\
+$R_{o}$ is the outer radius \\
+$R_{i}$ is the inner radius \\
+$t$ is the welding time \\
+$\mu$ is the co-efficient of friction and\\
+$P$ is the normal force during welding.
+
+For our current work, $\mu$ was taken as 0.3 for holes and 0.4 for petals. Table \ref{table:total-heat-generated} gives heat generated during FWTPET. 
+
+\begin{table*}[h]
+\centering
+\caption{Total Heat Generated for Holes Profile during FWTPET }
+\label{table:total-heat-generated}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{RPM} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Maximum Load\\  (kN)\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Contact Shear Stress \\ (N/mm2)\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Heat Generation Rate \\ (kJ/s)\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Heat Generated\\  (kJ)\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Total Heat Generated \\ (kJ)\end{tabular}} \\ \cline{2-9}
+ & Tube & Plate & Tube & Plate & Tube & Plate & Tube & Plate &  \\ \hline
+\multicolumn{10}{|c|}{Holes Profile} \\ \hline
+550 & 18.95 & 7.85 & 43.9 & 4.65 & 2.72 & 1.517 & 54.40 & 30.33 & 84.73 \\ \hline
+700 & 18.95 & 7.85 & 43.9 & 4.65 & 3.46 & 1.930 & 69.23 & 38.60 & 107.84 \\ \hline
+900 & 18.95 & 7.85 & 43.9 & 4.65 & 4.45 & 2.482 & 89.02 & 49.63 & 138.65 \\ \hline
+1100 & 18.95 & 7.85 & 43.9 & 4.65 & 5.44 & 3.033 & 108.80 & 60.66 & 169.46 \\ \hline
+\multicolumn{10}{|c|}{Petals Profile} \\ \hline
+550 & 20 & 7.85 & 23.76 & 6.20 & 4.61 & 2.02 & 92.19 & 40.44 & 132.63 \\ \hline
+700 & 20 & 7.85 & 23.76 & 6.20 & 5.87 & 2.57 & 117.33 & 51.47 & 168.80 \\ \hline
+900 & 20 & 7.85 & 23.76 & 6.20 & 7.54 & 3.31 & 150.85 & 66.18 & 217.03 \\ \hline
+1100 & 20 & 7.85 & 23.76 & 6.20 & 9.22 & 4.04 & 184.37 & 80.88 & 265.25 \\ \hline
+\end{tabular}
+}
+\end{table*}
 
 \subsection{Weld Strength}
 \label{subsec:Weld Strength}
@@ -234,19 +279,8 @@ The weld area of FWTPET joints is equal to the lateral surface area of the cylin
 \par
 Fractography was done on both the Ti and Al side of the fractured samples. The river-flow pattern observed on the SEM images indicate that the joint failed by shear mode. All the welded samples failed at the joint.
 
-\subsection{Heat Generated during FWTPET}
-\label{subsec:Heat Generated during FWTPET}
-The heat input equation for FWTPET is given in equation \ref{eq:heat-input}.
-\begin{gather} \label{eq:heat-input}
-Q_{T} = \frac{2\pi}{3} \times  \omega \times \tau_{friction} \times (R^{3}_{o} - R^{3}_{i}) \times t
-\end{gather}
-where : \\
-$Q_{M}$ is the Total Heat generated \\
-$\omega$ is the angular momentum of the tool \\
-$\tau_{friction}$ is the co-efficient of friction \\
-$R_{o}$ is the outer radius and  \\
-$R_{i}$ is the inner radius and
-$t$ is the welding time.
+
+
 
 \subsection{X-Ray Diffraction Analysis}
 \label{subsec:XRD-Results}
